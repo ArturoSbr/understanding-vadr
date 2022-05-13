@@ -12,6 +12,7 @@ For example, the text
 > Dear Dice,
 > 
 > This game sucks. The specialists are trash. This trailer was a lie. I want my money back.
+
 receives a negative score of `0.112`.
 
 What drove this black-box model to make this prediction? Is it the words _sucks_ and _trash_? Does the word _dear_ reduce the predicted negativity?
