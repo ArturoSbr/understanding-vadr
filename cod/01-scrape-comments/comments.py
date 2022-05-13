@@ -2,7 +2,7 @@
 from googleapiclient.discovery import build
 
 # Function to scrape comments
-def getComments(apiKey=None, videoId=None):
+def getComments(apiKey=None, videoId=None, limit=1000):
     
     # Build youtube instance
     youtube = build(serviceName='youtube', version='v3', developerKey=apiKey)
@@ -38,7 +38,7 @@ def getComments(apiKey=None, videoId=None):
         npt = None
 
     # Iterate through subsequent pages
-    while npt is not None:
+    while npt is not None and len(comments) <= limit:
         # Buid another request
         req = youtube.commentThreads().list(
             part='snippet',
@@ -48,7 +48,7 @@ def getComments(apiKey=None, videoId=None):
             videoId=videoId,
             fields=', '.join([token, author, comment, date]),
             prettyPrint=True,
-            maxResults=15,
+            maxResults=50,
             pageToken=npt
         )
 
@@ -62,7 +62,7 @@ def getComments(apiKey=None, videoId=None):
             npt = None
 
         # Add new comments
-        comments = comments.append(res['items'])
+        comments.append(res['items'])
 
     # Return response
     return comments
