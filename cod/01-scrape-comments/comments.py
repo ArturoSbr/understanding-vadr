@@ -62,7 +62,7 @@ def getComments(apiKey=None, videoId=None, limit=1000):
             npt = None
 
         # Add new comments
-        comments.append(res['items'])
+        comments += res['items']
 
     # Return response
     return comments
