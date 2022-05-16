@@ -30,4 +30,4 @@ I mined a few thousand comments from Battlefield 2042's [launch trailer](https:/
 I picked this video because Battlefield 2042 was a highly-anticipated yet poorly-received game. As stated in [Kotaku](https://kotaku.com/on-steam-farming-simulator-22-has-more-active-players-1848128969):
 > One of the biggest games of the year on one of the most popular digital stores in the world on one of the biggest gaming platforms in the world [...] isn't able to keep up with Farming Simulator 22.
 
-As of May 2022, the video has 23 million views and around 100K comments. Due to the game's populatiry and poor reception by the general public, the comment section is large and overwhelmingly negative, making it a good case study for this project.
+As of May 2022, the video has 23 million views and around 100K comments. Due to the game's popularity and poor reception by the general public, the comment section is large and overwhelmingly negative, making it a good case study for this project.
