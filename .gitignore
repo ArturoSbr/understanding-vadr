@@ -1,2 +1,9 @@
 # Ignore venv
 .env
+
+# Ignore images
+fig/
+
+# Ignore Jupyter stuff
+__pycache__
+.ipynb_checkpoints
